@@ -66,7 +66,7 @@ func TestIsReadyExcludedType(t *testing.T) {
 		{"role", true},
 		{"rig", true},
 		{"task", false},
-		{"convoy", false},
+		{"convoy", true},
 		{"wisp", false},
 		{"", false},
 		{"MOLECULE", false}, // case-sensitive

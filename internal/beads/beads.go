@@ -176,6 +176,7 @@ func IsMoleculeType(t string) bool {
 // matches the exclusion list in the bd CLI's GetReadyWork query.
 var readyExcludeTypes = map[string]bool{
 	"merge-request": true, // processed by automation
+	"convoy":        true, // dispatch container grouping child beads for batch expansion
 	"gate":          true, // async wait conditions
 	"molecule":      true, // workflow containers
 	"step":          true, // non-root formula steps; parent molecule is the actionable unit (#1039)
